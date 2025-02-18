@@ -1,10 +1,27 @@
-# 代码开源规范
+# Enhancing the Patent Matching Capability of Large Language Models via Memory Graph
 
-**1. 说明**
+Source code for our paper: 
+[Enhancing the Patent Matching Capability of Large Language Models via Memory Graph](https://arxiv.org)
 
-组内所有同学的投稿论文都需要开源，因此需要具备良好的代码开源规范。每位同学的开源代码必须能够由组内其他同学独立复现。
 
-该规范参考了清华大学自然语言处理与社会人文计算实验室学生科研工作及成果发表规范，请同学完成[相关阅读](https://nlp.csai.tsinghua.edu.cn/static/norms_v8.pdf)。
+If you find this work useful, please cite our paper and give us a shining star 🌟
+
+```
+@inproceedings{,
+  title={Enhancing the Patent Matching Capability of Large Language Models via Memory Graph},
+  author={},
+  booktitle={},
+  pages={},
+  year={2025}
+}
+```
+
+## Contact
+
+If you have questions, suggestions, and bug reports, please email:
+```
+xiongqiushi@stumail.neu.edu.cn
+```
 
 **2. 开源代码组织**
 
@@ -30,10 +47,6 @@
 * `Contact`: 联系邮箱，其他研究者可以根据邮箱联系到你；
 * 在此基础上，同学们可以自行地增加项目其他所需内容。
 
-
-**4. 代码示例**
-
-本库提供了一个简单的代码示例(完善中)。
 
 
 
