@@ -21,8 +21,8 @@ If you find this work useful, please cite our paper and give us a shining star �
 **1️⃣ Clone from git**
 
 ```bash
-git clone https://github.com/OpenMatch/NeuScraper
-cd NeuScraper
+git clone https://github.com/NEUIR/MemGraph
+cd MemGraph
 ```
 
 
