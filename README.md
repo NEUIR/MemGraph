@@ -3,18 +3,8 @@
 Source code for our paper: 
 [Enhancing the Patent Matching Capability of Large Language Models via Memory Graph](https://arxiv.org)
 
-
 If you find this work useful, please cite our paper and give us a shining star 🌟
 
-```
-@inproceedings{,
-  title={Enhancing the Patent Matching Capability of Large Language Models via Memory Graph},
-  author={},
-  booktitle={},
-  pages={},
-  year={2025}
-}
-```
 
 ## Quick Start
 
@@ -25,6 +15,17 @@ git clone https://github.com/NEUIR/MemGraph
 cd MemGraph
 ```
 
+## 📃 Citation
+
+```bibtex
+@inproceedings{,
+  title={Enhancing the Patent Matching Capability of Large Language Models via Memory Graph},
+  author={},
+  booktitle={},
+  pages={},
+  year={2025}
+}
+```
 
 ## Contact
 
