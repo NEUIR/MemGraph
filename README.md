@@ -16,6 +16,16 @@ If you find this work useful, please cite our paper and give us a shining star �
 }
 ```
 
+## Quick Start
+
+**1️⃣ Clone from git**
+
+```bash
+git clone https://github.com/OpenMatch/NeuScraper
+cd NeuScraper
+```
+
+
 ## Contact
 
 If you have questions, suggestions, and bug reports, please email:
