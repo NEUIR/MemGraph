@@ -1,0 +1,39 @@
+You are a patent classification expert. In the patent examination and search process, it's often necessary to compare the technical fields of multiple related patents. I will provide an original patent abstract and its related technical entities, as well as four potentially related patent abstracts (options A, B, C, D) and their respective technical entities. The original abstract represents a patent under examination, while options A-D represent potentially related existing patents found in the database.
+
+Your task is to generate a multi-level technical classification for the original abstract and each option, referencing but not limited to the approach of the International Patent Classification (IPC) system. These classifications will be used to evaluate the technical relevance between the original patent and existing patents, helping to determine the novelty and inventiveness of the patent.
+
+Input:
+
+Original abstract: {abs}
+Original abstract technical entities: {entity}
+
+Option A: {abs_a}
+Option A technical entities: {entity_a}
+
+Option B: {abs_b}
+Option B technical entities: {entity_b}
+
+Option C: {abs_c}
+Option C technical entities: {entity_c}
+
+Option D: {abs_d}
+Option D technical entities: {entity_d}
+
+Please output the classification results using the following format:
+
+Original abstract: [Major category] > [Subcategory] > [Specific class]
+Option A: [Major category] > [Subcategory] > [Specific class]
+Option B: [Major category] > [Subcategory] > [Specific class]
+Option C: [Major category] > [Subcategory] > [Specific class]
+Option D: [Major category] > [Subcategory] > [Specific class]
+
+Notes:
+1. The classification should be in three levels.
+2. Reference but don't limit yourself to the IPC classification system approach, using general, intuitive terms to describe technology categories.
+3. Use 1-3 words to describe each level, gradually refining from major category to specific class.
+4. Classifications should reflect the patent's core technical features, application areas, and innovation focus.
+5. Make full use of the provided technical entities, which contain important technical information.
+6. Maintain consistency: if two patents belong to similar fields, they should be given similar classifications.
+7. Only output the classification results, do not add any additional explanations.
+
+Based on the above information, please provide accurate and concise three-level technical classifications for the given original patent abstract and each option. Before starting the classification, please carefully read all abstracts and technical entities to ensure consistency and relevance in the classification.

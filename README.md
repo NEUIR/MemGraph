@@ -5,17 +5,66 @@ Source code for our paper:
 
 If you find this work useful, please cite our paper and give us a shining star 🌟
 
+## 🎯 Overview
+We propose MemGraph, a method that augments the patent matching capabilities of LLMs by incorporating a memory graph derived from their parametric memory. 
 
-## Quick Start
+Specifically, MemGraph prompts LLMs to traverse their memory to identify relevant entities within patents, followed by attributing these entities to corresponding ontologies. After traversing the memory graph, we utilize extracted entities and ontologies to improve the capability of LLM in comprehending the semantics of patents. 
 
-**1️⃣ Clone from git**
+Experimental results on the PatentMatch dataset demonstrate the effectiveness of MemGraph, achieving a **17.68%** performance improvement over baseline LLMs.
 
+![model](https://newxqsoss.oss-cn-hangzhou.aliyuncs.com/undefinedmodel.png)
+
+## ⚙️ Environment Setup
+1️⃣ Clone from git:
 ```bash
-git clone https://github.com/NEUIR/MemGraph
+git clone https://github.com/NEUIR/MemGraph.git
 cd MemGraph
 ```
+2️⃣ Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-## 📃 Citation
+## 📚 Data Preparation
+1️⃣ Download retrieval corpus we collected from the [Google Drive](https://drive.google.com/drive/folders/1TBvQTIEDsUW6bKFKGSg9yM8wvio5wMIO?usp=sharing), please make sure that the files under the data folder contain the following before running:
+
+```
+data/
+├── corpus/
+│   ├── patent_en.json
+│   └── patent_zh.json 
+└── benchmark/
+```
+2️⃣ Data Processing
+
+```bash
+sh scripts/data_processing.sh
+```
+
+
+## 🧑‍💻 Reproduce
+1️⃣ Build MemGraph
+
+```bash
+# Generate entity
+sh scripts/generate_entity.sh
+
+# Generate ontology
+sh scripts/generate_ontology.sh
+```
+
+2️⃣ Retrieval with MemGraph
+```bash
+sh scripts/retrieval.sh
+```
+
+3️⃣ Inference with MemGraph
+```bash
+sh scripts/inference.sh
+```
+
+
+## 📝 Citation
 
 ```bibtex
 @inproceedings{,
@@ -27,36 +76,14 @@ cd MemGraph
 }
 ```
 
-## Contact
+## 📨 Contact
 
 If you have questions, suggestions, and bug reports, please email:
 ```
 xiongqiushi@stumail.neu.edu.cn
 ```
 
-**2. 开源代码组织**
 
-* `src`: 放置主源码；
-* `scripts`: 放置代码训练、评估脚本及配置文件；
-* `data`: 放置数据下载脚本或部分数据集例子；
-* `figs`: 放置README中的图片；
-* `requirements.txt`: 用于配置python环境。需确保重新创建python环境后，通过`pip install -r requirements.txt`可以正常运行源码；
-* `LICENSE`: 一般选MIT协议即可；
-* `README.md`: 开源代码配置运行指南；
-* 在此基础上，同学们可以自行地增加项目其他所需文件。
-
-
-**3. README规范**
-
-* `论文 Title`: 提供该仓库对应的论文名称以及链接；
-* `Citation`: 给出引用格式；
-* `Quick Links`: 提供checkpoint、data等下载链接，使用的模型、训练代码相关库的链接；
-* `Overview`: 项目简介及相关图像描述；
-* `Environment Setup`: 阐明环境搭建的流程；
-* `Preparation`: 数据集、模型等相关准备配置；
-* `Reproduce`: 给出训练、评估，实现论文中结果复现的全部流程指南；
-* `Contact`: 联系邮箱，其他研究者可以根据邮箱联系到你；
-* 在此基础上，同学们可以自行地增加项目其他所需内容。
 
 
 

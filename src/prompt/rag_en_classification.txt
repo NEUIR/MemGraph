@@ -1,0 +1,8 @@
+Refer to the following patent abstract to answer the subsequent question:
+{rag_passages}
+The question is as follows:
+{question}
+The classification information for the patent abstract is as follows:
+{classification}
+Only choose from options A/B/C/D, without providing additional analysis
+Answer:
