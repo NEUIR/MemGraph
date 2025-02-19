@@ -1,4 +1,4 @@
-# Enhancing the Patent Matching Capability of Large Language Models via Memory Graph
+# MemGraph: Enhancing the Patent Matching Capability of Large Language Models via Memory Graph
 
 Source code for our paper: 
 [Enhancing the Patent Matching Capability of Large Language Models via Memory Graph](https://arxiv.org)
