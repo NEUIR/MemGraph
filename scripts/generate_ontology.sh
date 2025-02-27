@@ -16,7 +16,7 @@ nohup python ../src/build_graph.py \
 
 echo "进程已在后台启动，进程ID: $!"
 
-## api 模型运行（保持注释状态）
+## api 模型运行
 #nohup python ../src/build_graph.py \
 #--generation_type "ontology" \
 #--model_import_type "api" \

@@ -21,7 +21,7 @@ nohup python ../src/inference.py \
 
 echo "进程已在后台启动，进程ID: $!"
 
-## api 模型运行（保持注释状态）
+## api 模型运行
 #nohup python ../src/inference.py \
 #--model_import_type "api" \
 #--api_model_name "${MODEL_NAME}" \
