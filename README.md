@@ -52,7 +52,7 @@ models/
 
 You can download these models from:
 - Embedding models: [BAAI/bge-base-en](https://huggingface.co/BAAI/bge-base-en), [BAAI/bge-base-zh](https://huggingface.co/BAAI/bge-base-zh)
-- Language Model: [Qwen2-7B-Instruct](https://huggingface.co/Qwen/Qwen2-7B-Instruct) (or other compatible LLMs like [Qwen2.5-14B-Instruct](https://huggingface.co/Qwen/Qwen2.5-14B), [Llama-3-8B-Instruct](https://huggingface.co/meta-llama/Llama-3-8B-Instruct), [GLM-4-9B-Chat](https://huggingface.co/THUDM/glm-4-9b-chat))
+- Language Model: [Qwen2-7B-Instruct](https://huggingface.co/Qwen/Qwen2-7B-Instruct) (or other compatible LLMs like [Qwen2.5-14B-Instruct](https://huggingface.co/Qwen/Qwen2.5-14B), [Llama-3-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct), [GLM-4-9B-Chat](https://huggingface.co/THUDM/glm-4-9b-chat))
 
 ## 🧑‍💻 Reproduce
 1️⃣ Build MemGraph
