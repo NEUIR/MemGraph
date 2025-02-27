@@ -11,7 +11,7 @@ echo "开始执行检索任务: ${MODEL_NAME}..."
 
 CUDA_VISIBLE_DEVICES=0,1,2,3 \
 nohup python ../src/bge_retrieval.py \
-  --retrieval_model_path "../model/bge/bge-base-${LANGUAGE}" \
+  --retrieval_model_path "../model/embedding/bge-base-${LANGUAGE}" \
   --test_data_path "../data/benchmark/PatentMatch_${LANGUAGE}_output_${MODEL_NAME}.jsonl" \
   --corpus_path "../data/corpus/patent_${LANGUAGE}.json" \
   --language $LANGUAGE \
