@@ -25,9 +25,8 @@ cd MemGraph
 pip install -r requirements.txt
 ```
 
-## 📚 Data Preparation
-1️⃣ Download retrieval corpus we collected from the [Google Drive](https://drive.google.com/drive/folders/1TBvQTIEDsUW6bKFKGSg9yM8wvio5wMIO?usp=sharing), please make sure that the files under the data folder contain the following before running:
-
+## 📚 Preparation
+1️⃣ Download retrieval corpus we collected from the [Google Drive](https://drive.google.com/drive/folders/1TBvQTIEDsUW6bKFKGSg9yM8wvio5wMIO?usp=sharing), create a `corpus` directory and make sure that the files under the data folder contain the following before running:
 ```
 data/
 ├── corpus/
@@ -40,7 +39,20 @@ data/
 ```bash
 sh scripts/data_processing.sh
 ```
+3️⃣ Our implementation requires both embedding and language models. First, create a `models` directory in the project root and download the necessary models from Hugging Face:
 
+```
+models/
+├── embedding/
+│   ├── bge-base-en/       # English embedding model
+│   └── bge-base-zh/       # Chinese embedding model
+└── llm/
+    └── Qwen2-7B-Instruct/ # Language model
+```
+
+You can download these models from:
+- Embedding models: [BAAI/bge-base-en](https://huggingface.co/BAAI/bge-base-en), [BAAI/bge-base-zh](https://huggingface.co/BAAI/bge-base-zh)
+- Language Model: [Qwen2-7B-Instruct](https://huggingface.co/Qwen/Qwen2-7B-Instruct) (or other compatible LLMs like [Qwen2.5-14B-Instruct](https://huggingface.co/Qwen/Qwen2.5-14B), [Llama-3-8B-Instruct](https://huggingface.co/meta-llama/Llama-3-8B-Instruct), [GLM-4-9B-Chat](https://huggingface.co/THUDM/glm-4-9b-chat))
 
 ## 🧑‍💻 Reproduce
 1️⃣ Build MemGraph
@@ -62,7 +74,6 @@ sh scripts/retrieval.sh
 ```bash
 sh scripts/inference.sh
 ```
-
 
 ## 📝 Citation
 
