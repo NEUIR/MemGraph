@@ -1,7 +1,7 @@
 # MemGraph: Enhancing the Patent Matching Capability of Large Language Models via Memory Graph
 
 Source code for our SIGIR'25 paper: 
-[Enhancing the Patent Matching Capability of Large Language Models via Memory Graph](https://https://arxiv.org/abs/2504.14845)
+[Enhancing the Patent Matching Capability of Large Language Models via Memory Graph](https://arxiv.org/abs/2504.14845)
 
 If you find this work useful, please cite our paper and give us a shining star 🌟
 
